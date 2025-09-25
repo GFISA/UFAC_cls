@@ -1,0 +1,140 @@
+\documentclass[aspectratio=43]{beamer} %For normal presentation (comment otherwise)
+%\documentclass[aspectratio=169]{beamer} %for widescreen prestentation
+\usetheme{Marburg}
+\usefonttheme{serif}
+\usecolortheme{default}%albatross, crane, beetle, dove, fly, seagull, wolverine e beaver.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%EXTRA PACTAGES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese, english]{babel}
+\usepackage[round]{natbib}
+\usepackage{hyperref} 
+\usepackage{tcolorbox}
+\usepackage{graphicx} % Required for including images
+\usepackage{graphics}
+\graphicspath{{Imagens/}} % Location of the graphics files
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage[font=small,labelfont=bf]{caption}%specifies captions on tables and figures
+\usepackage{amsfonts, amsmath, amsthm, amssymb} 
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+\usepackage{makeidx}
+\usepackage{epstopdf}%adiciona imagens em formato eps no pdf.
+\usepackage{subfigure}%cria ambientes de multifiguras
+\usepackage{float}%coloca as figuras exatamente aonde você quer
+\usepackage{times}
+\usepackage{tikz}%pacote para fazer fluxogramas
+\usepackage{verbatim}%
+\usepackage{multicol}
+\usepackage{smartdiagram}
+\usepackage[makeroom]{cancel}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{hyperref} 
+\usepackage{smartdiagram}
+\usesmartdiagramlibrary{additions}
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage[font=small,labelfont=bf]{caption} 
+\usepackage{subfigure}%cria ambientes de multifiguras
+
+
+\usepackage{verbatim}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%PREAMBLE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author[Carreira,V.R.]{
+Curso:  \\ 
+Código:  \\ 
+Carga horária: \\
+Créditos: \\
+Professor: \\
+Semestre letivo e ano:  \\
+Dias e horários: \\
+Local: \\
+} 
+
+\title{Nome da disciplina.}
+\subtitle{Título tema da aula}
+\institute{UFAC - Universidade Federal do Acre}
+\date{2025}
+\subject{aula}
+\setbeamertemplate{footline}[frame number]
+\setbeamercovered{transparent}
+\setbeamertemplate{navigation symbols}{}
+% Tela cheia
+\hypersetup{pdfpagemode=FullScreen}
+\usepackage{ragged2e}
+\justifying
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%PRESENTATION%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%	\initclock
+%	\tdclock
+{%\nologo
+	\begin{frame}
+	%\titlepage
+	\begin{center}
+    \color{blue}{\huge{Universidade Federal do Acre}}
+	\end{center}
+
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.125]{Imagens/logoUFAC.png} 
+	\end{figure}
+\end{frame}
+}
+\bgroup
+\makeatletter
+\setbeamertemplate{footline}
+\makeatother
+\maketitle
+\egroup
+\scriptsize 
+\addtobeamertemplate{navigation symbols}{}{\hskip6pt\raisebox{2pt}{\color{blue}\insertframenumber}}
+\setcounter{framenumber}{0}
+\AtBeginSection[]
+{ \begin{frame}
+\centering
+\frametitle{Sumário}
+\scriptsize
+\tableofcontents[currentsection,currentsubsection]% apresenta o sumário antes de cada seção
+
+\end{frame} }
+
+\section{Seção 1}
+
+\section{Seção 2}
+
+\section{Seção 3}
+
+
+\begin{frame}[allowframebreaks]
+%\beamertemplatetextbibitems
+\tiny
+\bibliographystyle{apalike}
+\bibliography{references}
+\end{frame}
+
+\makeatother
+{
+\begin{frame}
+
+	\begin{figure}
+		\includegraphics[scale=0.1]{Imagens/logoUFAC.png}
+	\end{figure}
+	\begin{center}
+		\begin{minipage}{0.77\textwidth}
+			\small
+			\begin{center}
+			    Estrada BR-364, Km 04\\
+			    CEP 69920-900\\
+			    Bairro Distrito Industrial, Rio Branco - AC\\ 
+				PABX: 55 68 3901-2580\\
+				\url{www.ufac.br}
+			\end{center}
+		\end{minipage}
+	\end{center}
+\end{frame}
+}
+
+
+
+\end{document}
