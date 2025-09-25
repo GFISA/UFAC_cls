@@ -6,7 +6,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
-<img src="imagem.png" alt="Exemplo imagem">
+<img src="logoUFAC.png" alt="Universidade Federal do Acre">
 
 Repositório com os modelos em TeX para documentos oficiais da UFAC: dissertação, relatórios, teses, apresentação, pôster. 
 
