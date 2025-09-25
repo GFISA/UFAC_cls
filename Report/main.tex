@@ -1,0 +1,27 @@
+\documentclass[report]{ufac} % Opções draft_tcc, final_tcc, report
+
+% Informações de Capa
+\authorname{JOÃO DA SILVA SAURO}
+\worktitle{ESTUDO ABRANGENTE DE SISTEMAS QUÂNTICOS}
+\subtitle{ABORDAGENS TEÓRICAS E APLICAÇÕES PRÁTICAS}
+\advisorname{MARIA GOMES}
+
+% Configuração da bibliografia
+\usepackage[backend=biber, style=authoryear, citestyle=authoryear, natbib=true, url=false, doi=false, isbn=false, maxcitenames=2, mincitenames=1, maxbibnames=5, minbibnames=3]{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+
+\docinit % Initializes title page and pre-text based on document type
+
+% Include Chapters
+\input{cap1.tex}
+\input{cap2.tex}
+\input{cap3.tex}
+\input{cap4.tex}
+\input{cap5.tex}
+\input{cap6.tex}
+
+\docend % Includes post-textual elements and references
+
+\end{document}
